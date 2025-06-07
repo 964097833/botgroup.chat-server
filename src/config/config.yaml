@@ -29,16 +29,19 @@ llm_providers:
 
 
 llm_models:
-    qwen-plus: "aliyun"
-    qwen-turbo: "aliyun"
+    qwen-plus-latest: "aliyun"
+    qwen-turbo-latest: "aliyun"
+    qwen3-235b-a22b: "aliyun"
     deepseek-v3-241226: "huoshan"
-    doubao-1-5-lite-32k-250115: "huoshan"
+    Doubao-1-5-thinking-vision-pro: "huoshan"
     ep-20250306223646-szzkw: "huoshan"
     hunyuan-turbos-latest: "tencent"
-    glm-4-plus: "zhipuai"
+    GLM-4-Air-250414: "zhipuai"
     deepseek-chat: "deepseek"
+    deepseek-reasoner: "deepseek"
     moonshot-v1-8k: "moonshot"
-    ernie-3__5-128k: "baidu"
+    am-an73qfuiy92d: "baidu"
+    hunyuan-turbos-vision: "yuanbao"
 
 llm_system_prompt: '注意重要：1、你的名字是"#name#"，认准自己的身份；2、你的输出内容不要加#name#：这种多余前缀；3、如果用户提出玩游戏，比如成语接龙等，严格按照游戏规则，不要说一大堆，要简短精炼；4、保持群聊风格字数严格控制在50字以内，越简短越好（新闻总结类除外）'
 
@@ -46,7 +49,7 @@ llm_characters:
   - id: "ai0"
     name: "调度器"
     personality: "sheduler"
-    model: "qwen-plus"
+    model: "qwen-plus-latest"
     avatar: ""
     custom_prompt: '你是一个群聊总结分析专家，你在一个聊天群里，请分析群用户消息和上文群聊内容
       1、只能从给定的标签列表中选择最相关的标签，可选标签：#allTags#。
@@ -56,7 +59,7 @@ llm_characters:
   - id: "ai4"
     name: "元宝"
     personality: "yuanbao"
-    model: "deepseek-v3-241226"
+    model: "hunyuan-turbos-vision"
     avatar: "/img/yuanbao.png"
     custom_prompt: '你是一个名叫"元宝"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
@@ -69,7 +72,7 @@ llm_characters:
   - id: "ai5"
     name: "豆包"
     personality: "doubao"
-    model: "doubao-1-5-lite-32k-250115"
+    model: "Doubao-1-5-thinking-vision-pro"
     avatar: "/img/doubao_new.png"
     custom_prompt: '你是一个名叫"豆包"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
@@ -81,7 +84,7 @@ llm_characters:
   - id: "ai6"
     name: "千问"
     personality: "qianwen"
-    model: "qwen-plus"
+    model: "qwen3-235b-a22b"
     avatar: "/img/qwen.jpg"
     custom_prompt: '你是一个名叫"千问"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
@@ -93,8 +96,8 @@ llm_characters:
   
   - id: "ai7"
     name: "DeepSeek"
-    personality: "deepseek-V3"
-    model: "qwen-turbo"
+    personality: "deepseek-reasoner"
+    model: "deepseek-reasoner"
     avatar: "/img/ds.svg"
     custom_prompt: '你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
@@ -108,7 +111,7 @@ llm_characters:
   - id: "ai8"
     name: "智谱"
     personality: "glm"
-    model: "glm-4-plus"
+    model: "GLM-4-Air-250414"
     avatar: "/img/glm.gif"
     custom_prompt: '你是一个名叫"智谱"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
@@ -136,7 +139,7 @@ llm_characters:
   - id: "ai10"
     name: "文小言"
     personality: "baidu"
-    model: "ernie-3__5-128k"
+    model: "am-an73qfuiy92d"
     avatar: "/img/baidu.svg"
     custom_prompt: '你是一个名叫"文心一言"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
