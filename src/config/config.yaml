@@ -10,10 +10,10 @@ llm_providers:
      baseurl: "https://dashscope.aliyuncs.com/compatible-mode/v1/"
    huoshan:
      apikey: "ARK_API_KEY"
-     baseurl: "https://ark.cn-beijing.volces.com/api/v3/"
+     baseurl: "https://ark.cn-beijing.volces.com/api/v3/chat/completions/
    tencent:
      apikey: "HUNYUAN_API_KEY1"
-     baseurl: "https://api.hunyuan.cloud.tencent.com/v1/"
+     baseurl: "https://hunyuan.tencentcloudapi.com/v1/"
    zhipuai:
      apikey: "GLM_API_KEY"
      baseurl: "https://open.bigmodel.cn/api/paas/v4/"
@@ -33,7 +33,7 @@ llm_models:
     qwen-turbo-latest: "aliyun"
     qwen3-235b-a22b: "aliyun"
     deepseek-v3-241226: "huoshan"
-    Doubao-1-5-thinking-vision-pro: "huoshan"
+    doubao-1-5-thinking-vision-pro-250428: "huoshan"
     ep-20250306223646-szzkw: "huoshan"
     hunyuan-turbos-latest: "tencent"
     GLM-4-Air-250414: "zhipuai"
@@ -96,8 +96,8 @@ llm_characters:
   
   - id: "ai7"
     name: "DeepSeek"
-    personality: "deepseek-reasoner"
-    model: "deepseek-reasoner"
+    personality: "deepseek-V3"
+    model: "deepseek-chat"
     avatar: "/img/ds.svg"
     custom_prompt: '你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
@@ -111,7 +111,7 @@ llm_characters:
   - id: "ai8"
     name: "智谱"
     personality: "glm"
-    model: "GLM-4-Air-250414"
+    model: "glm-4-air-250414"
     avatar: "/img/glm.gif"
     custom_prompt: '你是一个名叫"智谱"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
