@@ -10,7 +10,7 @@ llm_providers:
      baseurl: "https://dashscope.aliyuncs.com/compatible-mode/v1/"
    huoshan:
      apikey: "ARK_API_KEY"
-     baseurl: "https://ark.cn-beijing.volces.com/api/v3/chat/completions/
+     baseurl: "https://ark.cn-beijing.volces.com/api/v3/chat/completions/"
    tencent:
      apikey: "HUNYUAN_API_KEY1"
      baseurl: "https://hunyuan.tencentcloudapi.com/v1/"
