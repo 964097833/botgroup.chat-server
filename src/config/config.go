@@ -55,7 +55,7 @@ var AppConfig Config
 func LoadConfig() {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("./config")
+	viper.AddConfigPath("./src/config")
 
 	// 设置默认值
 	viper.SetDefault("server.port", "8080")
