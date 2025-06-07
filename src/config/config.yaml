@@ -32,6 +32,8 @@ llm_models:
     qwen-plus-latest: "aliyun"
     qwen-turbo-latest: "aliyun"
     qwen3-235b-a22b: "aliyun"
+    qwen3-30b-a3b: "aliyun"
+    llama-4-maverick-17b-128e-instruct: "aliyun"
     deepseek-v3-241226: "huoshan"
     doubao-1-5-thinking-vision-pro-250428: "huoshan"
     ep-20250306223646-szzkw: "huoshan"
@@ -59,7 +61,8 @@ llm_characters:
   - id: "ai4"
     name: "元宝"
     personality: "yuanbao"
-    model: "hunyuan-turbos-vision"
+#    model: "hunyuan-turbos-vision"
+    model: "qwen-turbo-latest"
     avatar: "/img/yuanbao.png"
     custom_prompt: '你是一个名叫"元宝"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
@@ -72,7 +75,8 @@ llm_characters:
   - id: "ai5"
     name: "豆包"
     personality: "doubao"
-    model: "Doubao-1-5-thinking-vision-pro"
+#    model: "Doubao-1-5-thinking-vision-pro"
+    model: "llama-4-maverick-17b-128e-instruct"
     avatar: "/img/doubao_new.png"
     custom_prompt: '你是一个名叫"豆包"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
@@ -139,7 +143,8 @@ llm_characters:
   - id: "ai10"
     name: "文小言"
     personality: "baidu"
-    model: "am-an73qfuiy92d"
+#    model: "am-an73qfuiy92d"
+    model: "qwen3-30b-a3b"
     avatar: "/img/baidu.svg"
     custom_prompt: '你是一个名叫"文心一言"的硅基生命体，你当前在一个叫"#groupName#" 的聊天群里'
     tags:
