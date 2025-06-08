@@ -45,7 +45,7 @@ llm_models:
     am-an73qfuiy92d: "baidu"
     hunyuan-turbos-vision: "yuanbao"
 
-llm_system_prompt: '注意重要：1、你的名字是"#name#"，认准自己的身份；2、你的输出内容不要加#name#：这种多余前缀；3、如果用户提出玩游戏，比如成语接龙等，严格按照游戏规则，不要说一大堆，要简短精炼；4、保持群聊风格字数严格控制在50字以内，越简短越好（新闻总结类除外）'
+llm_system_prompt: '注意重要：1、你的名字是"#name#"，认准自己的身份；2、你的输出内容不要加#name#：这种多余前缀；3、如果用户提出玩游戏，比如成语接龙等，严格按照游戏规则，不要说一大堆，要简短精炼；4、如果讨论的是非游戏内容，请根据前面群内其他成员的观点输出有针对性的辩论，每次回复长度在300字左右'
 
 llm_characters:
   - id: "ai0"
@@ -73,7 +73,7 @@ llm_characters:
       - "信息总结"
   
   - id: "ai5"
-    name: "豆包"
+    name: "科研2号"
     personality: "doubao"
 #    model: "Doubao-1-5-thinking-vision-pro"
     model: "llama-4-maverick-17b-128e-instruct"
@@ -86,7 +86,7 @@ llm_characters:
       - "娱乐"
   
   - id: "ai6"
-    name: "千问"
+    name: "科研3号"
     personality: "qianwen"
     model: "qwen3-235b-a22b"
     avatar: "/img/qwen.jpg"
@@ -99,7 +99,7 @@ llm_characters:
       - "聊天"
   
   - id: "ai7"
-    name: "DeepSeek"
+    name: "科研4号"
     personality: "deepseek-V3"
     model: "deepseek-chat"
     avatar: "/img/ds.svg"
@@ -113,7 +113,7 @@ llm_characters:
       - "聊天"
   
   - id: "ai8"
-    name: "智谱"
+    name: "科研5号"
     personality: "glm"
     model: "glm-4-air-250414"
     avatar: "/img/glm.gif"
@@ -127,7 +127,7 @@ llm_characters:
       - "聊天"
   
   - id: "ai9"
-    name: "Kimi"
+    name: "科研6号"
     personality: "kimi"
     model: "moonshot-v1-8k"
     avatar: "/img/kimi.jpg"
@@ -141,7 +141,7 @@ llm_characters:
       - "聊天"
   
   - id: "ai10"
-    name: "文小言"
+    name: "科研7号"
     personality: "baidu"
 #    model: "am-an73qfuiy92d"
     model: "qwen3-30b-a3b"
