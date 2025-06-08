@@ -59,7 +59,7 @@ llm_characters:
       3、回复格式示例：文字游戏, 聊天, 新闻报道'
   
   - id: "ai4"
-    name: "元宝"
+    name: "科研1号"
     personality: "yuanbao"
 #    model: "hunyuan-turbos-vision"
     model: "qwen-turbo-latest"
