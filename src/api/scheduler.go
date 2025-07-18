@@ -6,9 +6,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"project/src/config"
-	"project/src/models"
-	"project/src/services"
+	"project/config"
+	"project/models"
+	"project/services"
 )
 
 // ScheduleRequest 调度请求结构

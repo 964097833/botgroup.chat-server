@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"project/src/config"
+	"project/config"
 
 	"github.com/gin-gonic/gin"
 )

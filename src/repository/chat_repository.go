@@ -3,7 +3,7 @@ package repository
 import (
 	"errors"
 
-	"project/src/models"
+	"project/models"
 )
 
 // ChatRepository 聊天仓库接口

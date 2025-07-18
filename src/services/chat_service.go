@@ -7,9 +7,9 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"project/src/config"
-	"project/src/models"
-	"project/src/repository"
+	"project/config"
+	"project/models"
+	"project/repository"
 	"strings"
 	"time"
 

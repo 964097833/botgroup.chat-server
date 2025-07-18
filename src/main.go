@@ -5,9 +5,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"project/src/api"
-	"project/src/config"
-	"project/src/middleware"
+	"project/api"
+	"project/config"
+	"project/middleware"
 )
 
 func main() {

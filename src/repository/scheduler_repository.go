@@ -3,7 +3,7 @@ package repository
 import (
 	"errors"
 
-	"project/src/models"
+	"project/models"
 )
 
 // SchedulerRepository 调度仓库接口
